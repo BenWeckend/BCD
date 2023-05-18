@@ -11,7 +11,7 @@ import: https://raw.githubusercontent.com/liaTemplates/AVR8js/main/README.md
         
 
 -->
-[![LiaScript](https://raw.githubusercontent.com/LiaScript/LiaScript/master/badges/course.svg)](https://liascript.github.io/course/?https://github.com/TUBAF-IUZ-LiaScript/ENGLISH-ROB-BGIP/blob/main/HK_LED_bubblesort/Bubblesort.md)
+[![LiaScript](https://raw.githubusercontent.com/LiaScript/LiaScript/master/badges/course.svg)](https://liascript.github.io/course/?https://github.com/BenWeckend/BCD/blob/main/bcd.md?plain=1)
 
 # BCD Decoder
 -------------
