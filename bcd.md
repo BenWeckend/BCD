@@ -11,6 +11,7 @@ import: https://raw.githubusercontent.com/liaTemplates/AVR8js/main/README.md
         
 
 -->
+[![LiaScript](https://raw.githubusercontent.com/LiaScript/LiaScript/master/badges/course.svg)](https://liascript.github.io/course/?https://github.com/TUBAF-IUZ-LiaScript/ENGLISH-ROB-BGIP/blob/main/HK_LED_bubblesort/Bubblesort.md)
 
 # BCD Decoder
 -------------
@@ -22,25 +23,25 @@ import: https://raw.githubusercontent.com/liaTemplates/AVR8js/main/README.md
 ## Text
 -------
 
-~~**What does it do?**~~
+**What does ist do**
 
 The led strip displays the conversion of an 8 bit binary number into a three digit BCD number. 
 
-~~**How does it work?**~~
+**How does it work?**
 
 First an input number is displayed in a standard binary format.
 It then gets converted using the double-dabble algorithm, which alternates between doubling the input number (shifting it one position to the left) and dabbling with the number (adding the value of 3 in the according places if necessary).
 
-~~**Where is the idea from?**~~
+**Where is the idea from?**
 
 Little Jimmy, 3rd grade Freiberg elementary school. 
 
-~~**Where did you get the coding knowledge from?**~~
+**Where did you get the coding knowledge from?**
 
 - Introductory programming course in the winter semester
 - Personal experience
 
-~~**How could you develop the idea further?**~~
+**How could you develop the idea further?**
 
 - Display both the input and output number on seperate LED strips
 
