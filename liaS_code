@@ -1,3 +1,59 @@
+<!--
+
+author:   Ben und Martin
+email:    
+version:  0.1.7
+language: EN
+narrator: US English Female Female
+
+
+import: https://raw.githubusercontent.com/liaTemplates/AVR8js/main/README.md
+        
+
+-->
+
+# BCD Decoder
+-------------
+
+## Video
+--------
+!?[bcd](https://cdn.discordapp.com/attachments/505834702515470348/1106535704860827658/20230512_1158062.mp4)
+
+## Text
+-------
+
+~~**What does it do?**~~
+
+The led strip displays the conversion of an 8 bit binary number into a three digit BCD number. 
+
+~~**How does it work?**~~
+
+First an input number is displayed in a standard binary format.
+It then gets converted using the double-dabble algorithm, which alternates between doubling the input number (shifting it one position to the left) and dabbling with the number (adding the value of 3 in the according places if necessary).
+
+~~**Where is the idea from?**~~
+
+Little Jimmy, 3rd grade Freiberg elementary school. 
+
+~~**Where did you get the coding knowledge from?**~~
+
+- Introductory programming course in the winter semester
+- Personal experience
+
+~~**How could you develop the idea further?**~~
+
+- Display both the input and output number on seperate LED strips
+
+
+
+## Simulation
+-----
+<div id="matrix-experiment">
+<wokwi-neopixel-matrix pin="6" cols="9" rows="9"></wokwi-neopixel-matrix>
+<span id="simulation-time"></span>
+</div>
+
+```cpp             Automata
 
 #include "FastLED.h"
 #define DATA_PIN 6
@@ -13,7 +69,7 @@ void setup() {
 }
 
 void writeLeds(uint32_t input) {
-    memset(leds, 0x0, sizeof(CRGB) * NUM_LEDS)
+    memset(leds, 0x0, sizeof(CRGB) * NUM_LEDS);
     for (int i = 0; i < NUM_LEDS; i++) {
         if(input & (1 << (NUM_LEDS - i - 1))) {
             leds[i] = CRGB::White;
@@ -68,4 +124,9 @@ void loop() {
     FastLED.show();
     delay(10000);
 }
+
+
+```
+@AVR8js.sketch(matrix-experiment)
+
 
